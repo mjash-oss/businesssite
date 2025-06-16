@@ -1,0 +1,418 @@
+/* Past Work & Pricing Section */
+@media only screen and (min-width: 0rem) {
+    .past-work-pricing {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        position: relative;
+        background-color: #fff;
+
+        .container {
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-family: "Keania One", sans-serif;
+            font-weight: 400;
+            font-size: 45px;
+            color: #000;
+            width: 100%;
+            max-width: 1139px;
+            margin: 0 auto;
+            padding: 70px 20px 0;
+            text-align: center;
+            text-shadow:
+                0px 8px 12px rgba(0, 0, 0, 0.15),
+                0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-description {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #000;
+            width: 100%;
+            max-width: 1183px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            line-height: 18px;
+            letter-spacing: 0px;
+        }
+
+        .past-work {
+            width: 100%;
+            max-width: 1162px;
+            margin: 0 auto;
+            padding: 20px;
+
+            .work-grid {
+                display: flex;
+                gap: 40px;
+                flex-wrap: wrap;
+            }
+
+            .work-item {
+                flex: 1;
+                min-width: 300px;
+                display: flex;
+                flex-direction: column;
+
+                .work-image {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+                }
+
+                .work-description {
+                    margin-top: 20px;
+                    color: #000;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.15px;
+
+                    .work-text {
+                        font-family:
+                            "Roboto",
+                            -apple-system,
+                            Roboto,
+                            Helvetica,
+                            sans-serif;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: rgba(0, 0, 0, 1);
+                    }
+
+                    .work-link {
+                        font-family:
+                            "Roboto",
+                            -apple-system,
+                            Roboto,
+                            Helvetica,
+                            sans-serif;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: rgba(0, 0, 0, 1);
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .section-title-pricing {
+            font-family: "Keania One", sans-serif;
+            font-weight: 400;
+            font-size: 45px;
+            color: #000;
+            width: 100%;
+            max-width: 1139px;
+            margin: 80px auto 0;
+            padding: 0 20px;
+            text-align: center;
+            text-shadow:
+                0px 8px 12px rgba(0, 0, 0, 0.15),
+                0px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-description-pricing {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #000;
+            width: 100%;
+            max-width: 1183px;
+            margin: 20px auto 0;
+            padding: 0 20px;
+            text-align: center;
+            line-height: 44px;
+            letter-spacing: 0px;
+        }
+
+        .pricing {
+            width: 100%;
+            max-width: 1183px;
+            margin: 60px auto 0;
+            padding: 0 20px;
+
+            .pricing-grid {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .pricing-card {
+                flex: 1;
+                min-width: 300px;
+                max-width: 370px;
+                border-radius: 8px;
+                padding: 22px;
+                position: relative;
+
+                &.basic {
+                    box-shadow:
+                        0px 6px 10px 4px rgba(0, 0, 0, 0.15),
+                        0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+                    background-color: #000;
+
+                    .card-title,
+                    .price {
+                        color: #fff;
+                    }
+
+                    .card-description,
+                    .price-details,
+                    .features {
+                        color: #fff;
+                    }
+
+                    .basic-button {
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+
+                &.standard,
+                &.premium {
+                    border: 5px solid rgba(0, 0, 0, 0.12);
+                    background-color: #fff;
+                    padding: 24px;
+                    max-width: 373px;
+
+                    .card-title,
+                    .price {
+                        color: #000;
+                    }
+
+                    .card-description,
+                    .price-details,
+                    .features {
+                        color: #000;
+                    }
+
+                    .standard-button,
+                    .premium-button {
+                        background-color: #000;
+                        color: #fff;
+                        box-shadow:
+                            0px 8px 12px 6px rgba(0, 0, 0, 0.15),
+                            0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+                    }
+                }
+
+                .card-title {
+                    font-family: "Keania One", sans-serif;
+                    font-weight: 400;
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                }
+
+                .card-description {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-bottom: 30px;
+                }
+
+                .price-container {
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 10px;
+                    margin-bottom: 20px;
+                }
+
+                .price {
+                    font-family: "Keania One", sans-serif;
+                    font-weight: 400;
+                    font-size: 30px;
+                }
+
+                .price-details {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    line-height: 28px;
+                    letter-spacing: 0px;
+                }
+
+                .features {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0px;
+                    margin-bottom: 40px;
+                }
+
+                .button-container {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .cta-button {
+                    font-family: "Keania One", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    width: 272px;
+                    height: 52px;
+                    padding: 10px 12px;
+                    border: 1px solid #79747e;
+                    text-align: center;
+                    cursor: pointer;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+/* Tablet - 991px */
+@media only screen and (max-width: 991px) {
+    .past-work-pricing {
+        .section-description {
+            font-size: 20px !important;
+            line-height: 32px !important;
+        }
+
+        .section-description-pricing {
+            font-size: 20px !important;
+            line-height: 32px !important;
+        }
+
+        .past-work {
+            .work-grid {
+                flex-direction: column;
+            }
+
+            .work-item {
+                flex-direction: column;
+                min-width: 100%;
+
+                .work-description {
+                    min-width: 100%;
+                }
+            }
+        }
+
+        .pricing {
+            .pricing-card {
+                max-width: 500px;
+                width: 100%;
+
+                &.basic {
+                    max-width: 500px;
+                    width: 100%;
+                }
+
+                &.standard,
+                &.premium {
+                    max-width: 500px;
+                    width: 100%;
+                }
+
+                .card-title {
+                    max-width: 500px;
+                    width: 100%;
+                }
+
+                .card-description {
+                    max-width: 500px;
+                    width: 100%;
+                }
+
+                .price-container {
+                    max-width: 500px;
+                    width: 100%;
+                }
+
+                .price {
+                    max-width: 500px;
+                    width: 100%;
+                }
+
+                .price-details {
+                    max-width: 500px;
+                    width: 100%;
+                }
+
+                .features {
+                    max-width: 500px;
+                    width: 100%;
+                }
+
+                .button-container {
+                    max-width: 500px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile - 640px */
+@media only screen and (max-width: 640px) {
+    .past-work-pricing {
+        .section-description {
+            font-size: 18px !important;
+            line-height: 28px !important;
+            padding: 0 15px !important;
+        }
+
+        .section-description-pricing {
+            font-size: 18px !important;
+            line-height: 28px !important;
+            padding: 0 15px !important;
+        }
+
+        .pricing {
+            .pricing-card {
+                padding: 20px;
+
+                .card-title {
+                    font-size: 32px !important;
+                    padding: 20px;
+                }
+
+                .card-description {
+                    padding: 20px;
+                }
+
+                .price-container {
+                    padding: 20px;
+                }
+
+                .price {
+                    font-size: 24px !important;
+                    padding: 20px;
+                }
+
+                .price-details {
+                    padding: 20px;
+                }
+
+                .features {
+                    padding: 20px;
+                }
+
+                .button-container {
+                    padding: 20px;
+                }
+
+                .cta-button {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                }
+            }
+        }
+    }
+}

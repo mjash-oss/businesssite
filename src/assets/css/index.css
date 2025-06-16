@@ -76,6 +76,10 @@
     min-height: 100vh;
     background-color: #fff;
     overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 4.375rem;
   }
   .hero-background {
     position: absolute;
@@ -87,9 +91,7 @@
     z-index: 1;
   }
   .hero-content {
-    position: absolute;
-    left: 6.875rem;
-    top: 4.375rem;
+    position: relative;
     width: 18.75rem;
     z-index: 2;
     animation: fadeInUp 0.5s ease-out 0.3s both;
@@ -112,7 +114,7 @@
   .hero-subtitle {
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    font-size: 14;
+    font-size: 0.875rem;
     color: #fff;
     line-height: 2rem;
     letter-spacing: 0;
@@ -138,8 +140,11 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  .hero-section {
+    justify-content: flex-end; /* Move content to right side */
+    padding-right: 6.25rem; /* Add right margin */
+  }
   .hero-content {
-    right: 6.25rem;
     width: 25rem;
   }
   .hero-title {
@@ -151,35 +156,32 @@
   }
   .scroll-text {
     font-size: 1.375rem;
-    top: 42.5rem;
   }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  .hero-section {
+    padding-right: 3.125rem; /* Adjust margin for larger screens */
+  }
   .hero-content {
-    left: 38.75rem;
-    top: 4.375rem;
     width: 33.9375rem;
   }
   .hero-title {
     font-size: 5.5625rem;
     width: 33.9375rem;
-    height: 17.8125rem;
     text-align: right;
   }
   .hero-subtitle {
     font-size: 1.125rem;
     width: 32.875rem;
-    height: 4.625rem;
     text-align: right;
   }
   .scroll-text {
-    font-size: 1.5rem;
-    left: 34rem;
-    top: 45.75rem;
+    font-size: 1.125rem;
+    position: relative;
+    align-self: center;
     transform: none;
     width: 12rem;
-    height: 3.125rem;
   }
 }
 /*-- -------------------------- -->

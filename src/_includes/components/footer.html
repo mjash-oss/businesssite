@@ -2,83 +2,82 @@
 <!--                   Footer                     -->
 <!-- ============================================ -->
 
-<footer id="footer">
-    <div class="container">
-        <div class="left-section">
-            <a class="logo" href="/"
-                ><img
-                    loading="lazy"
-                    decoding="async"
-                    src="/assets/svgs/logo-white.svg"
-                    alt="logo"
-                    width="264"
-                    height="78"
-            /></a>
-            <p>
-                Extra content if you need it, if not you can delete this whole p
-                tag. I usually do.
-            </p>
+<footer id="footer" class="footer-new">
+    <div class="footer-container">
+        <!-- Header section with logo and email -->
+        <div class="footer-header">
+            <img
+                class="footer-logo"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/03e3badcb458a57b38d9eb5d0787bb67229b39fb?placeholderIfAbsent=true"
+                alt="Logo"
+                loading="lazy"
+                decoding="async"
+            />
+            <div class="footer-email">ashleymartinmaya@gmail.com</div>
         </div>
-        <div class="right-section">
-            <div class="lists">
-                <ul>
-                    <li>
-                        <h2>Information</h2>
-                    </li>
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/about">About Us</a>
-                    </li>
-                    <li>
-                        <a href="/projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="/reviews">Reviews</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Contact</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h2>Services</h2>
-                    </li>
-                    <li>Service1</li>
-                    <li>Service2</li>
-                    <li>Service4</li>
-                    <li>Service5</li>
-                </ul>
-                <ul>
-                    <li>
-                        <h2>Contact</h2>
-                    </li>
-                    <li>
-                        <a href="/contact">
-                            {{ client.address.lineOne }}<br />
-                            {{ client.address.lineTwo }}<br />
-                            {{ client.address.city }}
-                            {{ client.address.state }}
-                            {{ client.address.zip }}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:{{ client.phoneForTel }}">
-                            T: {{ client.phoneFormatted }}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:{{ client.email }}">Click to Email</a>
-                    </li>
-                </ul>
+
+        <!-- Tagline -->
+        <div class="footer-tagline">
+            Crafting intelligent solutions that turn your wildest design dreams
+            into reality.
+        </div>
+
+        <!-- Navigation sections -->
+        <div class="footer-navigation">
+            <div class="footer-nav-container">
+                <div class="footer-nav-column">
+                    <div class="footer-nav-content">
+                        <div class="footer-nav-title">Company</div>
+                        <div class="footer-nav-spacer"></div>
+                        <div class="footer-nav-spacer"></div>
+                        <div class="footer-nav-link">Blog</div>
+                        <div class="footer-nav-spacer"></div>
+                        <div class="footer-nav-spacer"></div>
+                        <div class="footer-nav-link">Contact Us</div>
+                    </div>
+                </div>
+                <div class="footer-nav-column">
+                    <div class="footer-nav-content">
+                        <div class="footer-nav-title">Legal</div>
+                        <div class="footer-nav-spacer"></div>
+                        <div class="footer-nav-spacer"></div>
+                        <div class="footer-nav-link">Terms and Conditions</div>
+                        <div class="footer-nav-spacer"></div>
+                        <div class="footer-nav-spacer"></div>
+                        <div class="footer-nav-link">Privacy Policy</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="credit">
-        <span>Designed and Hand Coded by</span>
-        <a href="/" target="_blank" rel="noopener">Your Company Name</a>
-        <span class="copyright"> Copyright {% year %} - Present</span>
+        <!-- Large decorative image -->
+        <img
+            class="footer-decoration"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/71c49d5e5922eba4c52056f821c32b72c37c4272?placeholderIfAbsent=true"
+            alt="Footer decoration"
+            loading="lazy"
+            decoding="async"
+        />
+
+        <!-- Copyright and social section -->
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                @2025. All rights reserved. ArchCity @Arch City
+            </div>
+            <img
+                class="footer-social-icon"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e29e507c8949a5cced29619e986ab43f9c8c0be?placeholderIfAbsent=true"
+                alt="Social media icon"
+                loading="lazy"
+                decoding="async"
+            />
+            <img
+                class="footer-social-icon"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/e999ef86ebf049379bf63a7a664fd0157a446c17?placeholderIfAbsent=true"
+                alt="Social media icon"
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
     </div>
 </footer>

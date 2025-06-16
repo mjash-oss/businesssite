@@ -86,6 +86,11 @@
         min-height: 100vh;
         background-color: #fff;
         overflow: hidden;
+        //adding flexblow
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: calc(70 / 16 * 1rem);
     }
 
     .hero-background {
@@ -100,9 +105,12 @@
     }
 
     .hero-content {
-        position: absolute;
-        left: calc(110 / 16 * 1rem);
-        top: calc(70 / 16 * 1rem);
+        //position: absolute;
+        position: relative;
+        //left: calc(110 / 16 * 1rem);
+        //left: 50%;
+        //transform: translateX(-50%);
+        //top: calc(70 / 16 * 1rem);
         width: calc(300 / 16 * 1rem);
         z-index: 2;
         animation: fadeInUp 0.5s ease-out 0.3s both;
@@ -129,8 +137,8 @@
     .hero-subtitle {
         font-family: Roboto, sans-serif;
         font-weight: 400;
-        //font-size: calc(18 / 16 * 1rem);
-        font-size: 14;
+        font-size: calc(14 / 16 * 1rem);
+        //font-size: 14;
         color: #fff;
         line-height: calc(32 / 16 * 1rem);
         letter-spacing: 0;
@@ -158,8 +166,13 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+    .hero-section {
+        justify-content: flex-end; /* Move content to right side */
+        padding-right: calc(100 / 16 * 1rem); /* Add right margin */
+    }
+
     .hero-content {
-        right: calc(100 / 16 * 1rem);
+        //right: calc(100 / 16 * 1rem);
         width: calc(400 / 16 * 1rem);
     }
 
@@ -174,15 +187,21 @@
 
     .scroll-text {
         font-size: calc(22 / 16 * 1rem);
-        top: calc(680 / 16 * 1rem);
+        //top: calc(680 / 16 * 1rem);
     }
 }
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+    .hero-section {
+        padding-right: calc(50 / 16 * 1rem); /* Adjust margin for larger screens */
+    }
+
     .hero-content {
-        left: calc(620 / 16 * 1rem);
-        top: calc(70 / 16 * 1rem);
+        //left: calc(620 / 16 * 1rem);
+        //left: auto;
+        //right: calc(50 / 16 * 1rem);
+        //top: calc(70 / 16 * 1rem);
         width: calc(543 / 16 * 1rem);
         
     }
@@ -190,24 +209,28 @@
     .hero-title {
         font-size: calc(89 / 16 * 1rem);
         width: calc(543 / 16 * 1rem);
-        height: calc(285 / 16 * 1rem);
+        //height: calc(285 / 16 * 1rem);
         text-align: right;
     }
 
     .hero-subtitle {
         font-size: calc(18 / 16 * 1rem);
         width: calc(526 / 16 * 1rem);
-        height: calc(74 / 16 * 1rem);
+        //height: calc(74 / 16 * 1rem);
         text-align: right;
     }
 
     .scroll-text {
-        font-size: calc(24 / 16 * 1rem);
-        left: calc(544 / 16 * 1rem);
-        top: calc(732 / 16 * 1rem);
+        font-size: calc(18 / 16 * 1rem);
+        position: relative;
+        align-self: center;
+       // left: calc(544 / 16 * 1rem);
+        //left: auto;
+        //right: calc(50 / 16 * 1rem);
+        //top: calc(732 / 16 * 1rem);
         transform: none;
         width: calc(192 / 16 * 1rem);
-        height: calc(50 / 16 * 1rem);
+        //height: calc(50 / 16 * 1rem);
     }
 }
 

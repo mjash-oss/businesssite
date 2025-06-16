@@ -12,6 +12,7 @@ eleventyNavigation:
 {% extends "layouts/base.html" %} {% block head %}
 <link rel="stylesheet" href="/assets/css/index.css" />
 <link rel="stylesheet" href="/assets/css/critical.css" />
+<link rel="stylesheet" href="/assets/css/past-work-pricing.css" />
 
 <!-- JSON Schema Markup -->
 <!-- prettier-ignore-start -->
@@ -66,7 +67,7 @@ eleventyNavigation:
         />
         <source
             media="(min-width: 601px)"
-            srcset="/assets/images/therightpeoplecoding.jpg" 
+            srcset="/assets/images/therightpeoplecoding.jpg"
         />
         <img
             class="hero-background"
@@ -170,121 +171,9 @@ eleventyNavigation:
 </main>
 
 <!-- ============================================ -->
-<!--                Past Work Section             -->
+<!--       Past Work and Pricing Section         -->
 <!-- ============================================ -->
 
-<section class="past-work-section">
-  <div class="container">
-    <h2 class="section-title">For restaurant OWNERS, business CREATORS, and more.</h2>
-    <p class="section-subtitle">
-      A quick view of our past work, from cost effective and cute, to personalized and photography oriented
-    </p>
-    
-    <div class="past-work-grid">
-      <!-- Project 1 -->
-      <div class="project-item">
-        <div class="project-card">
-          <div class="project-image">
-            <img 
-              src="https://c.animaapp.com/q8UoUbza/img/rectangle-7.png" 
-              alt="Photography website screenshot showing modern architecture"
-              class="project-img"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <div class="project-content">
-          <p class="project-description">
-            A photography site for a personal photographer. Built from 'basic, but not boring'. 
-            <a 
-              href="http://mashleymartin.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              https://mashleymartin.com
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-item">
-        <div class="project-card">
-          <div class="project-image">
-            <img 
-              src="https://c.animaapp.com/q8UoUbza/img/rectangle-8.png" 
-              alt="SatPM air quality website screenshot showing satellite imagery"
-              class="project-img"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <div class="project-content">
-          <p class="project-description">
-            Worked as a part of a team to improve the website for SatPM, an air quality website emphasizing the global and regional levels of PM2.5. 
-            <a 
-              href="https://jolly-questions-394267.framer.app/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              https://jolly-questions-394267.framer.app/
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!--                pricing             -->
-<!-- ============================================ -->
-
-<section class="past-work-section">
-    <div class="container">
-        <h2 class="section-title">For restaurant OWNERS, business CREATORS, and more.</h2>
-        <p class="section-subtitle">
-            From cost effective and cute, to personalized and photography oriented, we don't stop until your needs are met. For our basic and standard templates, YOU decide the images and text that works for you. 
-        </p>
-        <!-- Info Boxes -->
-    <div class="pricing-boxes">
-        <!-- Box 1 -->
-        <div class="pricing-box">
-            <div class="pricing-box-header">
-                <div class="pricing-box-title">
-                    Basic.
-                </div>
-            </div>
-            <div class="pricing-box-description">
-                Perfect for small restaurants just starting out.
-            </div>
-        </div>
-
-        <!-- Box 2 -->
-        <div class="pricing-box">
-            <div class="pricing-box-header">
-                <div class="pricing-box-title">
-                    Standard.
-                </div>
-            </div>
-            <div class="pricing-box-description">
-                A cute coffee shop vibe, this template offers increased pages and a more flexible layout.
-            </div>
-        </div>
-
-        <!-- Box 3 -->
-         <div class="pricing-box">
-            <div class="pricing-box-header">
-                <div class="pricing-box-title">
-                    Premium
-                </div>
-            </div>
-            <div class="pricing-box-description">
-                Here, we are selling our custom design and expertise, excellent for a client looking to maximize their potential.
-            </div>
-        </div>
-    </div>
+{% include 'components/past-work-pricing.html' %}
 
 {% include 'components/cta.html' %} {% endblock %}
